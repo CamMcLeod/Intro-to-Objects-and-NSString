@@ -11,9 +11,11 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSString* name = @"Cam McLeod";
         
-        NSLog(@"Hello, %@", name);
+        NSString* name = @"Cameron";
+        NSUInteger nameLength = [name length];
+        
+        NSLog(@"Hello, %@. Your name is %lu letters long.", name, nameLength);
     }
     return 0;
 }

@@ -16,6 +16,13 @@ int main(int argc, const char * argv[]) {
         NSUInteger nameLength = [name length];
         
         NSLog(@"Hello, %@. Your name is %lu letters long.", name, nameLength);
+        
+        NSString *nameUppercase = [name uppercaseString];
+        NSString *nameLowercase = [name lowercaseString];
+        NSString *nameAppending = [name stringByAppendingString: name];
+        NSString *nameReplacing = [name stringByReplacingOccurrencesOfString: name withString: nameUppercase];
+       
+        NSLog(@"Name in Uppercase: %@\n Name in Lowercaser: %@\n Name Appending: %@\n Name Replacing with Uppercase: %@\n", nameUppercase, nameLowercase, nameAppending, nameReplacing);
     }
     return 0;
 }
